@@ -1,0 +1,22 @@
+var myAge = 23
+//  ^^this variable represents my age in human years
+
+var earlyYears = 2
+// ^^ current age in human years
+earlyYears *= 10.5
+
+var laterYears = myAge - 2
+// ^^ take two years off as they are already accounted for in earlyYears
+laterYears *= 4
+// ^^laterYears in dog years
+var myAgeinDogYears = earlyYears + laterYears
+//^^ adding both early and later years to get my total age in dog years
+
+var myName = "Alex"
+myName = myName.toLowerCase()
+// ^^ saves my name as a variable and changes all letters to lowercase
+
+var sentence = "My name is " + myName + ". I am " + myAge + " years old in human years which is " + myAgeinDogYears + " years old in dog years"
+// for some reason this is the only way string interpolation would work for me
+// ${variable} would not work and would only display as written
+console.log(sentence)

@@ -1,11 +1,11 @@
 const Kelvin = 0
 
-var Celsius = Kelvin - 273
+const Celsius = Kelvin - 273
 // Celsius is 273 degrees lower than Kelvin
 var Fahren =  Celsius*(9/5)+32
 // changes Celsius to fahrenheit
 Fahren = Math.floor(Fahren)
 // This rounds Fahren down to the next whole number
 var newton = Math.floor(Celsius * (33/100))
-var sentence = "The temperature is " + Fahren + " degrees Fahrenheit and " + newton + " degrees Newton."
+var sentence = `The temperature is ${Fahren} degrees Fahrenheit and ${newton} degrees Newton.`
 console.log(sentence)

@@ -1,0 +1,47 @@
+const userName = 'King Arthur';
+if (userName !== '') {
+console.log(`Hello, ${userName}!`)
+}
+else{
+console.log(`Hello, Anon!`)
+}
+const userQuestion = 'Have I defeated the Black knight?';
+console.log(`${userQuestion}`)
+
+const randomNumber = Math.floor(Math.random() * 8);
+let TheBlackKnight = ``;
+
+if (randomNumber === 0) {
+    TheBlackKnight += `Tis but a scratch`;
+    console.log(TheBlackKnight)
+}
+else if (randomNumber === 1) {
+    TheBlackKnight += `It's only a flesh wound`;
+    console.log(TheBlackKnight)
+}
+else if (randomNumber === 2) {
+    TheBlackKnight += `You're arm is off -- no it isn't`;
+    console.log(TheBlackKnight)
+}
+else if (randomNumber === 3) {
+    TheBlackKnight += `I've had worse`;
+    console.log(TheBlackKnight)
+}
+else if (randomNumber === 4) {
+    TheBlackKnight += `come on then, have at you!`;
+    console.log(TheBlackKnight)
+}
+else if (randomNumber === 5) {
+    TheBlackKnight += `none shall pass`;
+    console.log(TheBlackKnight)
+}
+else if (randomNumber === 6) {
+    TheBlackKnight += `I'm invincible!!`;
+    console.log(TheBlackKnight)
+}
+else if (randomNumber === 7) {
+    TheBlackKnight += `Alright we'll call it a draw`;
+    console.log(TheBlackKnight)
+}
+
+

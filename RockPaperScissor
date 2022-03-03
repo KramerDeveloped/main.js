@@ -1,0 +1,45 @@
+
+function userChoice(userInput) {
+    userInput = userInput.toLowerCase();
+    if (userInput === `rock` || userInput === "paper" || userInput === "scissors")
+        return userInput
+    else
+        return "you are stupid try again"
+}
+function ComputerChoice() {
+    RandomNum = Math.floor(Math.random()*3);
+if (RandomNum === 0)
+ return `rock`
+ else if (RandomNum === 1)
+ return `scissors`
+ else
+ return `paper`
+}
+function determineWinner(UserChoice, computerChoice) {
+    if (UserChoice === computerChoice)
+    return `It is a tie`
+    else if (UserChoice === `rock`)
+     if (computerChoice === `scissors`)
+     return`You Win!`
+     else 
+     return `you lose :(`
+
+     else if (UserChoice === `paper`)
+    if (computerChoice === `rock`)
+     return`You Win!`
+     else 
+     return `you lose :(`
+     else if (UserChoice === `scissors`)
+     if (computerChoice === `paper`)
+      return`You Win!`
+      else 
+      return `you lose :(`
+}
+function playGame() {
+     var UserChoice = userChoice(`rock`);
+     var computerChoice = ComputerChoice();
+     console.log(UserChoice);
+     console.log(computerChoice);
+     console.log(determineWinner(UserChoice, computerChoice));
+}
+playGame();

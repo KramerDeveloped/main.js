@@ -1,0 +1,26 @@
+var input = 'Learning programming so i can play more videogames';
+const vowels =  ['a','e','i','o','u','y'];
+let resultArray = [];
+
+for (let i = 0; i < input.length; i++) {
+    const inputVowels = input[i];
+    // console.log(inputVowels);
+    if (inputVowels === 'e'|| inputVowels === 'u'){
+    resultArray.push(inputVowels);}
+    else{
+    console.log();
+    }
+    for (let j = 0; j < vowels.length; j++) {
+        const vowelsTotal = vowels[j];
+        if (inputVowels === vowelsTotal) {
+        resultArray.push(vowelsTotal);
+        }
+        else {
+        console.log();
+        }
+    }
+};
+// console.log(resultArray);
+var resultString = resultArray.join("");
+var resultString = resultString.toUpperCase();
+console.log(resultString);
